@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -682,6 +682,7 @@ p {
 }
 
 /* Ajout de propriétés aux éléments ajoutés*/
+
 figure {
     font-style: italic;
 }
@@ -691,15 +692,16 @@ figcaption {
     font-style:normal;
     color: #333333;
 }
-/*Fin des nouvelles propriétés*/
+
+.black {
+    color: black!important;
+}
+
+/*******Fin des nouvelles propriétés********/
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-    /*Ajout de propriétés pour le contraste*/
-    background-color: black;
-    opacity: .8;
-    padding: 2rem 2rem 2rem 2rem;
 }
 
 .h1 {
@@ -772,6 +774,9 @@ h1 {
 .black-background {
     /*Suppresion de la couleur pour améliorer le contraste*/
     padding: 40px 40px 40px 40px;
+    background-color: black;
+    opacity: .8;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .bold-link {
