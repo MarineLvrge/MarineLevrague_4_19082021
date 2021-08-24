@@ -677,12 +677,29 @@ a {
 }
 
 p {
-    font-size: 11px;
+    /* Augmentation de la taille de la police*/
+    font-size: medium;
 }
+
+/* Ajout de propriétés aux éléments ajoutés*/
+figure {
+    font-style: italic;
+}
+
+figcaption {
+    font-weight: bold;
+    font-style:normal;
+    color: #333333;
+}
+/*Fin des nouvelles propriétés*/
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    /*Ajout de propriétés pour le contraste*/
+    background-color: black;
+    opacity: .8;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .h1 {
@@ -705,12 +722,14 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    /*Modification de la taille de la police*/
+    font-size: large;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    /*Modification de la taille de la police*/
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -726,9 +745,7 @@ h1 {
     color: #333333!important;
 }
 
-h4 {
-    color: #333333!important;
-}
+/*Suppression des styles sur le h4 car il n'existe pas*/
 
 .icons {
     margin-bottom: 14px;
@@ -753,7 +770,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /*Suppresion de la couleur pour améliorer le contraste*/
     padding: 40px 40px 40px 40px;
 }
 
@@ -780,7 +797,8 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    /*Modification de la couleur du texte pour le contraste*/
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -848,13 +866,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -873,8 +891,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 0;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +902,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
