@@ -706,9 +706,6 @@ a:focus {
     border: solid .5rem red;
 }
 
-nav ul:hover {
-    border: none;
-}
 /*******Fin des nouvelles propriétés********/
 
 .tight-width-whitespace {
@@ -809,7 +806,8 @@ h1 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /*Modification de la couleur de la police pour le contraste*/
+    color: black!important;
 }
 
 .btn-atomic-tangerine {
