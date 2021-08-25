@@ -334,8 +334,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    /*Modification de la propriété focus*/
-    border: solid 1px black;
+    background: none;
 }
 
 .navbar-toggle {
@@ -698,8 +697,17 @@ figcaption {
     color: black!important;
 }
 
-.navbar-brand:focus, .btn-atomic-tangerine:focus, .ltc-white:focus, .img-responsive:focus, .social_icon:focus {
-    border: solid 1px black;
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+a:focus {
+    border: solid .5rem red;
+}
+
+nav ul:hover {
+    border: none;
 }
 /*******Fin des nouvelles propriétés********/
 
@@ -837,11 +845,11 @@ h1 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.jpg");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.jpg");
 }
 
 .bg-banniere {
@@ -849,7 +857,7 @@ h1 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
