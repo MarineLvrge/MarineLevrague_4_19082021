@@ -334,7 +334,8 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    /*Modification de la propriété focus*/
+    border: solid 1px black;
 }
 
 .navbar-toggle {
@@ -681,7 +682,7 @@ p {
     font-size: medium;
 }
 
-/* Ajout de propriétés aux éléments ajoutés*/
+/*********Ajout de propriétés aux éléments ajoutés*********/
 
 figure {
     font-style: italic;
@@ -697,6 +698,9 @@ figcaption {
     color: black!important;
 }
 
+.navbar-brand:focus, .btn-atomic-tangerine:focus, .ltc-white:focus, .img-responsive:focus, .social_icon:focus {
+    border: solid 1px black;
+}
 /*******Fin des nouvelles propriétés********/
 
 .tight-width-whitespace {
