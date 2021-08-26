@@ -31,7 +31,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    /*Suppression du padding*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -807,7 +807,7 @@ h1 {
 
 .tc-white {
     /*Modification de la couleur de la police pour le contraste*/
-    color: white!important;
+    color: #f3976c!important;
 }
 
 .btn-atomic-tangerine {
