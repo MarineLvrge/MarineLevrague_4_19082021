@@ -807,7 +807,7 @@ h1 {
 
 .tc-white {
     /*Modification de la couleur de la police pour le contraste*/
-    color: black!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
